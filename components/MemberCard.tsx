@@ -24,7 +24,7 @@ const MemberCard = (props: TEAM_MEMBER_TYPE) => {
                             </span>
                         </div>
                     </div>
-                    <div className='flex justify-center gap-1 mt-3'>
+                    <div className='flex sm:justify-center justify-end gap-1 mt-3'>
                         <motion.a href={props.twitter} target="_blank" whileTap={{ scale: 0.95 }} whileHover={{ scale: 1.05 }} className='bg-primary p-1 sm:p-2 rounded-lg'>
                             <Twitter size={14} className='text-white sm:hidden' />
                             <Twitter size={18} className='text-white hidden sm:flex' />
