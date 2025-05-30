@@ -91,15 +91,15 @@ const FilterNav = () => {
                                 className='w-full py-2 px-3 border border-primary text-primary'
                                 whileHover={{ backgroundColor: "#f0f0f0" }}
                                 whileTap={{ scale: 0.97 }}
+                                onClick={() => {
+                                    setFilters({
+                                        jobType: "all",
+                                        departments: [],
+                                        page: 1
+                                    });
+                                }}
                             >
                                 Clear Filters
-                            </motion.button>
-                            <motion.button
-                                className='w-full py-2 px-3 bg-primary text-white'
-                                whileHover={{ backgroundColor: "#2563eb" }}
-                                whileTap={{ scale: 0.97 }}
-                            >
-                                Apply Filters
                             </motion.button>
                         </motion.div>
                     </motion.div>
