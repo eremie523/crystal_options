@@ -111,7 +111,7 @@ export const TEAM: TEAM_MEMBER_TYPE[] = [
     {
         id: 7,
         name: "Jonathan Owens",
-        photo: "/assets/images/hero-7.jpg",
+        photo: "https://randomuser.me/api/portraits/men/7.jpg",
         jobTitle: "Financial Analyst",
         description: "Jonathan analyzes financial data to help guide strategic business decisions and improve company performance.",
         type: "Contract",
@@ -126,7 +126,7 @@ export const TEAM: TEAM_MEMBER_TYPE[] = [
     {
         id: 8,
         name: "Megan Cooper",
-        photo: "/assets/images/hero-8.jpg",
+        photo: "https://randomuser.me/api/portraits/women/8.jpg",
         jobTitle: "Content Writer",
         description: "Megan crafts compelling content that connects with audiences and enhances our brand voice.",
         type: "Intern",
@@ -141,7 +141,7 @@ export const TEAM: TEAM_MEMBER_TYPE[] = [
     {
         id: 9,
         name: "Dylan Hart",
-        photo: "/assets/images/hero-9.jpg",
+        photo: "https://randomuser.me/api/portraits/men/9.jpg",
         jobTitle: "QA Engineer",
         description: "Dylan ensures our products meet the highest quality standards through rigorous testing and QA processes.",
         type: "Full-Time",
@@ -156,7 +156,7 @@ export const TEAM: TEAM_MEMBER_TYPE[] = [
     {
         id: 10,
         name: "Sophia Reed",
-        photo: "/assets/images/hero-10.jpg",
+        photo: "https://randomuser.me/api/portraits/women/10.jpg",
         jobTitle: "Project Manager",
         description: "Sophia coordinates cross-functional teams to ensure successful project delivery on time and within budget.",
         type: "Full-Time",
