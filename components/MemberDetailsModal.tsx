@@ -1,5 +1,5 @@
 import { useActiveMember } from "@/contexts/ActiveMember";
-import { Linkedin, Mail, Twitter, X } from "lucide-react";
+import { X } from "lucide-react";
 import { AnimatePresence, motion } from "motion/react";
 
 const MemberDetailsModal = () => {
@@ -67,7 +67,7 @@ const MemberDetailsModal = () => {
                                 <img
                                     src={member.photo}
                                     alt={member.name}
-                                    className="w-full h-full object-cover"
+                                    className="w-full h-full object-cover flex items-center justify-center"
                                 />
                             </motion.div>
 
@@ -106,40 +106,19 @@ const MemberDetailsModal = () => {
                                 animate={{ y: 0, opacity: 1 }}
                                 transition={{ delay: 0.4 }}
                             >
-                                {member.twitter && (
-                                    <motion.a
-                                        href={member.twitter}
-                                        target="_blank"
-                                        whileHover={{ y: -3 }}
-                                        whileTap={{ scale: 0.95 }}
-                                        className="p-3 rounded-full bg-primary text-white shadow"
-                                    >
-                                        <Twitter size={20} />
-                                    </motion.a>
-                                )}
-
-                                {member.linkedin && (
-                                    <motion.a
-                                        href={member.linkedin}
-                                        target="_blank"
-                                        whileHover={{ y: -3 }}
-                                        whileTap={{ scale: 0.95 }}
-                                        className="p-3 rounded-full bg-primary text-white shadow"
-                                    >
-                                        <Linkedin size={20} />
-                                    </motion.a>
-                                )}
-
-                                {member.email && (
-                                    <motion.a
-                                        href={`mailto:${member.email}`}
-                                        whileHover={{ y: -3 }}
-                                        whileTap={{ scale: 0.95 }}
-                                        className="p-3 rounded-full bg-primary text-white shadow"
-                                    >
-                                        <Mail size={20} />
-                                    </motion.a>
-                                )}
+                                {
+                                    member.socials.map(({ icon, href }, i) => (
+                                        <motion.a key={i}
+                                            href={href}
+                                            target="_blank"
+                                            whileHover={{ y: -3 }}
+                                            whileTap={{ scale: 0.95 }}
+                                            className="p-3 rounded-full bg-primary text-white shadow"
+                                        >
+                                            {icon}
+                                        </motion.a>
+                                    ))
+                                }
                             </motion.div>
 
                             {member.phone && (

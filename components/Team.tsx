@@ -62,6 +62,12 @@ const Team = () => {
 
     return (
         <div className="pt-1 pb-3 flex-grow-1">
+            <header className="text-primary">
+                <div className="container mx-auto">
+                    <h1 className="text-3xl md:text-4xl font-bold mb-4">Meet Our Team</h1>
+                    {/* <p className="text-xl max-w-2xl mx-auto">Discover the talented individuals who make our company thrive. Each member brings unique expertise to our collective success.</p> */}
+                </div>
+            </header>
             <h4 className="text-sm">Showing <span>{pageIndex.startIndex + 1}</span> to <span>{pageIndex.endIndex}</span>  of <span>{pageIndex.total}</span></h4>
             <ul className="grid sm:grid-cols-2 gap-4 sm:gap-8 pt-4">
                 {team.map((memberData: TEAM_MEMBER_TYPE) => (

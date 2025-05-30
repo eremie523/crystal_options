@@ -7,9 +7,6 @@ export default function Home() {
 
   return (
     <FilterProvider>
-      {/* <header className="border-b border-gray-300">
-        <h2 className="text-lg capitalize">Our Team</h2>
-      </header> */}
       <ActiveMemberProvider>
         <div className="flex flex-col gap-4 sm:flex-row">
           <FilterNav />
