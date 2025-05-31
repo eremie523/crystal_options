@@ -270,22 +270,7 @@ const MemberCard = ({ member }) => {
 };
 ```
 
-## Contributing
-
-Contributions are welcome! Please follow these steps:
-
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Add some amazing feature'`)
-4. Push to the branch (`git push origin feature/amazing-feature`)
-5. Open a pull request
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
 ## Acknowledgements
 
-- Team member photos from [Unsplash](https://unsplash.com)
 - Icons from [Lucide](https://lucide.dev)
 - Animation library [Framer Motion](https://www.framer.com/motion/)
