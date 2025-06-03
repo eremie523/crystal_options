@@ -48,13 +48,12 @@ This project is a responsive Team Showcase web component built with Next.js and 
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/yourusername/team-showcase.git
-cd team-showcase
+git clone https://github.com/eremie523/crystal_options/
+cd crystal_options
 ```
 
 2. Install dependencies for the web application:
 ```bash
-cd web
 npm install
 ```
 
@@ -66,7 +65,6 @@ npm install
 
 ### Running the Web Application
 ```bash
-cd web
 npm run dev
 ```
 Open [http://localhost:3000](http://localhost:3000) in your browser.
@@ -77,42 +75,6 @@ cd mobile
 npm start
 ```
 Scan the QR code with the Expo Go app on your iOS/Android device.
-
-## Project Structure
-
-### Web Application
-```
-web/
-├── components/
-│   ├── TeamShowcase.jsx     # Main team showcase component
-│   ├── MemberCard.jsx       # Individual team member card
-│   ├── FilterNav.jsx        # Filter navigation component
-│   └── Pagination.jsx       # Pagination controls
-├── contexts/
-│   └── FilterContext.jsx    # Global state management
-├── pages/
-│   └── index.js             # Main application page
-├── public/
-│   └── data/                # Team member JSON data
-├── styles/
-│   └── globals.css          # Global styles
-└── utils/
-    └── helpers.js           # Utility functions
-```
-
-### Mobile Application
-```
-mobile/
-├── components/
-│   ├── MemberCard.js        # Team member card component
-│   └── MemberDetails.js     # Member detail modal
-├── screens/
-│   └── TeamScreen.js        # Main team screen
-├── assets/
-│   └── data/                # Team member JSON data
-└── context/
-    └── TeamContext.js       # Team data context
-```
 
 ## Implementation Details
 
