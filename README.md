@@ -48,13 +48,12 @@ This project is a responsive Team Showcase web component built with Next.js and 
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/yourusername/team-showcase.git
-cd team-showcase
+git clone https://github.com/eremie523/crystal_options/
+cd crystal_options
 ```
 
 2. Install dependencies for the web application:
 ```bash
-cd web
 npm install
 ```
 
@@ -66,7 +65,6 @@ npm install
 
 ### Running the Web Application
 ```bash
-cd web
 npm run dev
 ```
 Open [http://localhost:3000](http://localhost:3000) in your browser.
